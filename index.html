@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roast Vault: 800+ Funny Roasts, Insults &amp; Gen-Z Slang with Meanings</title>
+    <meta name="description" content="Browse 800+ playful roasts, comebacks and Gen-Z slang from mild to strong, plus British banter. Search by meaning, generate a random roast and copy it in one tap.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#08070d">
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💀</text></svg>">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Roast Vault">
+    <meta property="og:title" content="Roast Vault: 800+ Funny Roasts &amp; Gen-Z Slang">
+    <meta property="og:description" content="Mild to strong roasts, British banter and slang meanings. Generate one and copy it instantly.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+    <meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Roast Vault",
+        "url": "https://YOUR-DOMAIN.com/",
+        "description": "A searchable collection of playful roasts, insults and Gen-Z slang with meanings.",
+        "inLanguage": "en",
+        "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://YOUR-DOMAIN.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header>
+        <div class="kicker">⚠️ INTERNET NONSENSE DEPARTMENT ⚠️</div>
+        <h1>ROAST<br><span>VAULT</span> 💀</h1>
+        <p class="subtitle">V2 // more chaos. less dignity.</p>
+    </header>
+
+    <div class="marquee" aria-hidden="true">
+        <div>
+            💀 CERTIFIED YAPPER • NPC ENERGY • PROFESSIONAL MENACE •
+            TOUCH GRASS • CHAOS GOBLIN • WALKING L •
+            CERTIFIED YAPPER • NPC ENERGY • PROFESSIONAL MENACE •
+            MILD → STRONG ENGLISH ROASTS •
+        </div>
+    </div>
+
+    <!-- Collage -->
+<section class="collage" aria-label="Roast Vault vibes gallery">
+    <figure class="collage-item big">
+        <img src="../iamcoolyet.jpg"
+            alt="Roast Vault meme-style artwork 1"
+            width="1200" height="800" loading="lazy" decoding="async">
+    </figure>
+
+    <figure class="collage-item small one">
+        <img src="../nodrama.jpg"
+            alt="Roast Vault meme-style artwork 2"
+            width="736" height="920" loading="lazy" decoding="async" >
+    </figure>
+
+    <figure class="collage-item small two">
+        <img src="../ewwpeople.jpg"
+            alt="Roast Vault meme-style artwork 3"
+            width="736" height="920" loading="lazy" decoding="async" >
+    </figure>
+</section>
+
+    <main class="container" id="main">
+
+        <!-- Random Generator -->
+        <section class="generator" aria-labelledby="gen-title">
+            <h2 class="kicker" id="gen-title">RANDOM ROAST GENERATOR</h2>
+
+            <div id="randomRoast" aria-live="polite">
+                Press the button. Ruin someone's day (playfully). 😭
+            </div>
+
+            <div id="randomDetails" class="generator-details">
+                <div id="randomMeaning"></div>
+                <div id="randomUsage"></div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="generate" id="generateBtn">GENERATE 🔥</button>
+                <button type="button" id="copyBtn">COPY 📋</button>
+                <button type="button" id="saveBtn" aria-pressed="false">SAVE 🤍</button>
+                <button type="button" id="shareBtn">SHARE 🔗</button>
+            </div>
+        </section>
+
+        <!-- Daily + Game -->
+        <div class="extras">
+            <section class="panel" aria-labelledby="daily-title">
+                <h2 id="daily-title" class="kicker">🔥 ROAST OF THE DAY</h2>
+                <div class="panel-phrase" id="dailyPhrase"></div>
+                <p class="panel-meaning" id="dailyMeaning"></p>
+                <div class="buttons">
+                    <button type="button" id="dailyCopy">Copy 📋</button>
+                    <button type="button" id="dailyShare">Share 🔗</button>
+                </div>
+            </section>
+
+            <section class="panel" aria-labelledby="quiz-title">
+                <h2 id="quiz-title" class="kicker">🎮 GUESS THE MEANING</h2>
+                <div class="panel-phrase" id="quizQ"></div>
+                <div class="quiz-options" id="quizOptions"></div>
+                <p class="quiz-score" id="quizScore" aria-live="polite"></p>
+            </section>
+        </div>
+
+        <section class="trending" id="trendingWrap" hidden aria-labelledby="trend-title">
+            <h2 id="trend-title" class="kicker">📈 YOUR MOST COPIED</h2>
+            <div class="chips" id="trendingChips"></div>
+        </section>
+
+        <!-- Search + sort -->
+        <div class="tools" role="search">
+            <label for="search" class="sr-only">Search roasts and slang</label>
+            <input id="search" type="search" placeholder="Search the vault… 🔎 (press / )" autocomplete="off">
+            <label for="sort" class="sr-only">Sort</label>
+            <select id="sort">
+                <option value="default">Default order</option>
+                <option value="az">A → Z</option>
+                <option value="shuffle">Shuffle 🎲</option>
+            </select>
+        </div>
+
+        <div class="filters" id="filters" role="group" aria-label="Filter by intensity"></div>
+
+        <h2 class="sr-only">All roasts and slang</h2>
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+
+        <section class="grid" id="grid" aria-label="Roast cards"></section>
+
+        <div class="load-more-wrap">
+            <button type="button" id="loadMore" hidden>Load more 👇</button>
+        </div>
+
+        <div class="empty" id="empty" hidden>No matching chaos found 💀</div>
+
+        <noscript>
+            <p class="empty">Roast Vault needs JavaScript to show the roast list. Please enable it and reload.</p>
+        </noscript>
+
+        <!-- Crawlable SEO text -->
+        <section class="seo-content" aria-labelledby="about-title">
+            <h2 id="about-title">What is Roast Vault?</h2>
+            <p>
+                Roast Vault is a free, searchable collection of over 800 playful roasts, light insults and
+                Gen-Z slang terms, each with a plain-English meaning. Sort by intensity, from
+                <strong>mild</strong> teasing you can use with friends to <strong>strong</strong> lines
+                and classic <strong>British banter</strong>, then copy any phrase with one tap.
+            </p>
+            <p>
+                Use the random roast generator for instant comebacks, or search to decode slang like
+                "rizz", "NPC energy" and "lock in" before you reply in the group chat.
+            </p>
+
+            <div class="faq">
+                <h2>FAQ</h2>
+                <details>
+                    <summary>Is Roast Vault free?</summary>
+                    <p>Yes. Browse, search, generate and copy as much as you like.</p>
+                </details>
+                <details>
+                    <summary>Are these meant to be mean?</summary>
+                    <p>No. They are for friendly banter and humour. Don't use them to harass, bully or target anyone.</p>
+                </details>
+                <details>
+                    <summary>What do the levels mean?</summary>
+                    <p>Mild is safe for most chats, Medium is spicier, Strong is harsh and for people who are clearly in on the joke, and British collects UK-style banter.</p>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="toast" role="status" aria-live="polite">Copied 💀</div>
+
+    <div class="bg-motion-asset1" id="bgAsset1" aria-hidden="true">
+        <img src="../genz.jpg"
+            alt="" width="400" height="600" loading="lazy" decoding="async" >
+    </div>
+
+    <div class="bg-motion-asset2" id="bgAsset2" aria-hidden="true">
+        <img src="../delulu.jpg"
+            alt="" width="400" height="600" loading="lazy" decoding="async" >
+    </div>
+
+    <footer>
+        <p>Keep it playful. Don't use insults to harass or target people.</p>
+        <p>© 2026 Roast Vault</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
